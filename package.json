@@ -1,0 +1,81 @@
+{
+  "name": "mobile-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@hookform/resolvers": "^3.9.1",
+    "@mui/icons-material": "^5.8.2",
+    "@mui/lab": "^5.0.0-alpha.94",
+    "@mui/material": "^5.5.1",
+    "@mui/styles": "^5.5.1",
+    "@mui/x-date-pickers": "^7.10.0",
+    "@react-firebase/auth": "^0.2.10",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
+    "@react-pdf/renderer": "^1.6.17",
+    "@tabler/icons-react": "^3.1.0",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.19.0",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.11",
+    "firebase": "^9.6.8",
+    "firebase-admin": "^10.0.2",
+    "formik": "^2.2.9",
+    "history": "^5.3.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "nprogress": "^0.2.0",
+    "path": "^0.12.7",
+    "pdfjs-dist": "3.4.120",
+    "react": "^18.0.0",
+    "react-app-rewired": "^2.2.1",
+    "react-brackets": "^0.4.6",
+    "react-detect-offline": "^2.4.5",
+    "react-dom": "^18.0.0",
+    "react-error-overlay": "^6.0.9",
+    "react-hook-form": "^7.54.1",
+    "react-icons": "^4.3.1",
+    "react-jwt": "^1.2.1",
+    "react-pdf": "^9.2.1",
+    "react-qr-code": "^2.0.12",
+    "react-qr-reader": "^3.0.0-beta-1",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "5.0.0",
+    "react-toastify": "^9.0.4",
+    "tinycolor2": "^1.4.2",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.6.1"
+  },
+  "scripts": {
+    "start": "set PORT=3004 && dotenv -e .env react-app-rewired start || export PORT=3004 dotenv -e .env react-app-rewired start",
+    "start:prod": "set PORT=3004 && dotenv -e .env.production react-app-rewired start || export PORT=3004 dotenv -e .env.production react-app-rewired start",
+    "build": "dotenv -e .env react-app-rewired build",
+    "build:development": "dotenv -e .env.development react-app-rewired build",
+    "build:production": "dotenv -e .env.production react-app-rewired build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^4.1.0"
+  }
+}
